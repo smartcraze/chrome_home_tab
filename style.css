@@ -1,0 +1,145 @@
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 24
+}
+
+/* Left parts of the header */
+.left,
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.dp {
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+/* header */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    /* background-color: rgb(209, 169, 246); */
+
+}
+
+/* google search bar */
+.intsearch {
+    width: 65rem;
+    font-size: larger;
+    background: hsl(0, 10%, 96%);
+    color: white;
+    border: none;
+    margin: 2px 10 px;
+    padding: 10px;
+    border-radius: 23px;
+    text-align: center;
+}
+
+
+/* custumising booksmarks */
+ul li {
+    list-style: none;
+}
+
+ul li a {
+    color: White;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans',;
+    text-decoration: none;
+    margin: 23px;
+    font-size: 1.16rem;
+}
+
+.bkm {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+
+
+}
+
+/* main section */
+
+
+.main::before {
+    content: "";
+    /* You can insert content here, but for a background image, an empty string is often used */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('./bg/pexels-magda-ehlers-446280.jpg');
+    /* Set the background image URL */
+    background-size: cover;
+    /* Adjust the background size as needed */
+    background-position: center;
+    /* Adjust the background position as needed */
+    opacity: 1;
+    /* Adjust the opacity of the background overlay */
+    z-index: -1;
+}
+
+/* Main google Logo */
+.google h1 {
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 6rem;
+    color: white;
+    text-align: center;
+}
+
+
+
+/* Styling g search */
+.Gsearch {
+    width: 45rem;
+    text-align: center;
+    background-image: url('./bg/icons8-search-100.png'); /* Replace with your icon image URL */
+    background-position: 95% center; /* Adjust the position of the icon */
+    background-repeat: no-repeat;
+    background-size: 20px 20px; /* Adjust the size of the icon */
+    font-size: 16px;
+    background: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    margin: 2px auto;
+    padding: 10px;
+    border-radius: 23px;
+    text-align: center;
+}
+
+.searchbar {
+    display: flex;
+    justify-content: center;
+}
+
+.Gsearch {
+    font-size: 1.15rem;
+}
+
+/* Logo section below search bar */
+.logo_url {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    grid-gap: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.logo_url p{
+    color: white;
+    font-size: medium;
+}
+.logo_url a {
+  text-decoration: none;
+  
+}
